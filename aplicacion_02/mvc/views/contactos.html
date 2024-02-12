@@ -1,0 +1,47 @@
+$def with (datos2)
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <title>CONTACTOS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 50%;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h1>CONTACTOS</h1>
+    <p>Hola, bienvenido a la página de contactos</p>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Email</th>
+        </tr>
+        $for contacto in datos2:
+        <tr>
+            <td>$contacto["nombre"]</td>
+            <td>$contacto["email"]</td>
+        </tr>
+    </table>
+</body>
+</html>
