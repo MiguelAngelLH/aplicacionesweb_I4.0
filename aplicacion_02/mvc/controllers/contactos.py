@@ -1,7 +1,7 @@
 import web
 from mvc.models.modelo_contactos import ModeloContactos
 
-render = web.template.render('mvc/views/')
+render = web.template.render('mvc/views/', base="layout")
 m_contactos = ModeloContactos()
 
 class Contactos:

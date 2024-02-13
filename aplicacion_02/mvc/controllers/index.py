@@ -1,7 +1,7 @@
 import web
 from mvc.models.modelo_index import ModeloIndex
 
-render = web.template.render('mvc/views/')
+render = web.template.render('mvc/views/', base= "layout")
 m_index = ModeloIndex()
 
 class Index:

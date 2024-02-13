@@ -9,6 +9,8 @@ class ModeloIndex:
         datos = [
             "Laptop dell",
             "mouse",
-            "cargador"
+            "cargador",
+            "Hub USB C",
+            "Otro valor"
         ]
-        return datos
+        return datos #regresa la lista
